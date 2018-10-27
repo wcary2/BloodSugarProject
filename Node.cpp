@@ -1,3 +1,7 @@
+//Blood Sugar Project
+//William Cary
+//Oct 26, 2018
+
 #include "Node.h"
 
 Node::Node(float entry)

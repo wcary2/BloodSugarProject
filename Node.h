@@ -1,3 +1,7 @@
+//Blood Sugar Project
+//William Cary
+//Oct 26 2018
+
 #pragma once
 #ifndef NODE_H_
 #define NODE_H_

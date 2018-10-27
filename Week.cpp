@@ -1,3 +1,7 @@
+//Blood Sugar Project
+//William Cary
+//Oct 26 2018
+
 #include <iostream>
 #include <iomanip>
 #include "Week.h"
@@ -70,7 +74,7 @@ void Week::nextEntry(float entry) {
 	return;
 }
 
-void Week::print(){
+void Week::print(){ // prints the details of the week.
 	std::cout << endl << "<" << std::setfill('-') << std::setw(50)
 		<< "WEEKLY SUMMARY" << std::setfill('-') << std::setw(50) << ">" << std::endl;
 	std::cout << "Your highest blood sugar reading occured on " << dayOfWeekMax << " and was was: " << max << endl
@@ -114,8 +118,8 @@ int Week::getCount() {
 
 
 
-void Week::sumFunction() {
-	LList list = week[pos];
+void Week::sumFunction() { //this function computes the sum for the entire week
+	LList list = week[pos];   // at every nextDay() call.
 	int listMultiplier = list.getMultiplier();
 	float listSum = list.getSum();
 	if (listMultiplier > 0) {
